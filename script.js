@@ -3,6 +3,10 @@ const selectors = document.querySelector("#selectors");
 
   selectors.addEventListener("click", (event) => {
 
+    if (event.target.style.background === "blue") {
+      return event.target.style.background = "";
+    }
+
     const select = document.querySelectorAll(".select");
 
     select.forEach(button => button.style.background = "");
