@@ -1,0 +1,17 @@
+
+body {
+  margin: 16px;
+  font-family: Arial;
+}
+
+button {
+  height: 44px;
+  width: 44px;
+  margin: 5px 3px;
+  border: 2px solid grey;
+  border-radius: 3px;
+}
+
+#selectors {
+  margin-top: 3em;
+}
