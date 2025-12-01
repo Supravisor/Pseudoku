@@ -4,6 +4,11 @@ body {
   font-family: Arial;
 }
 
+#puzzle {
+  margin: auto;
+  width: calc(calc(65px * 4));
+}
+
 button {
   height: 44px;
   width: 44px;
