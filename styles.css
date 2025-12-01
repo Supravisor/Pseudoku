@@ -12,7 +12,7 @@ body {
 button {
   height: 44px;
   width: 44px;
-  margin: 5px 3px;
+  margin: 10px 8px;
   border: 2px solid grey;
   border-radius: 3px;
 }
