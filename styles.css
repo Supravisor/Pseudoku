@@ -4,14 +4,27 @@ body {
   font-family: Arial;
 }
 
+#puzzle {
+  margin: auto;
+  width: calc(calc(65px * 4));
+}
+
 button {
   height: 44px;
   width: 44px;
-  margin: 5px 3px;
+  margin: 10px 8px;
   border: 2px solid grey;
   border-radius: 3px;
 }
 
 #selectors {
   margin-top: 3em;
+}
+
+h2 {
+  text-align: center;
+}
+
+ol {
+  margin-left: -1em;
 }
