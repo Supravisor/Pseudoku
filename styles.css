@@ -19,3 +19,7 @@ button {
 h2 {
   text-align: center;
 }
+
+ol {
+  margin-left: -1em;
+}
