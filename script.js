@@ -25,10 +25,12 @@ const selectors = document.querySelector("#selectors");
 
     select.forEach(button => button.style.background = "");
 
-    if (event.target.style.background === "blue") {
-      event.target.style.background = ""
+    if (event.target.style.background === "") {
+      selected = event.target.innerText;
+      event.target.style.background = "blue";
     } else {
-        event.target.style.background = "blue";
+        selected = " ";
+        event.target.style.background = "";
     }
 
   });
