@@ -4,7 +4,7 @@ body {
   font-family: Arial;
 }
 
-#puzzle {
+#puzzle, .keys {
   margin: auto;
   width: calc(calc(65px * 4));
 }
