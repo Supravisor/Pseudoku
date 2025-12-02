@@ -4,7 +4,13 @@ const keypad = document.querySelector("#puzzle");
 let selected = " ";
 
   keypad.addEventListener("click", (event) => {
-    event.target.innerText = "a"
+
+    if (selected === " ") {
+      event.target.innerHTML = `&nbsp;`;
+    } else {
+        event.target.innerHTML = selected;
+    }
+
   });
 
 const selectors = document.querySelector("#selectors");
