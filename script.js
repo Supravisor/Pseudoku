@@ -1,6 +1,9 @@
 
-const keypad = document.querySelector("#keypad");
+const keypad = document.querySelector("#puzzle");
 
+  keypad.addEventListener("click", (event) => {
+    event.target.innerText = "a"
+  });
 
 const selectors = document.querySelector("#selectors");
 
