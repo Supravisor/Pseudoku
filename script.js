@@ -18,6 +18,7 @@ const selectors = document.querySelector("#selectors");
   selectors.addEventListener("click", (event) => {
 
     if (event.target.style.background === "blue") {
+      selected = " ";
       return event.target.style.background = "";
     }
 
