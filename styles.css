@@ -4,9 +4,9 @@ body {
   font-family: Arial;
 }
 
-#puzzle, .keys {
+#puzzle, #selectors, #challenge {
   margin: auto;
-  width: calc(calc(65px * 4));
+  width: calc(calc(67px * 4));
 }
 
 h1 {
