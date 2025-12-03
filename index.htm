@@ -13,7 +13,7 @@
 
 <body>
 
-  <div id="puzzle">
+  <section id="puzzle">
 
     <h1>Pseudoku</h1>
 
@@ -61,30 +61,37 @@
   
     </div>
 
-  </div>
+  </section>
 
-  <div id="selectors" class="keys">
+  <section id="selectors" class="keys">
 
     <button class="select">1</button>
     <button class="select">2</button>
     <button class="select">3</button>
     <button class="select">4</button>
 
-  </div>
+  </section>
+
+  <section id="challenge">
 
     <h2>Challenge</h2>
   
-      <ol>
-        <li>
-  Each row contains the numbers 1 to 4.
-        </li>
-        <li>
-  Each column contains the numbers 1 to 4.
-        </li>
-        <li>
-  Do not repeat a number in either a row or column.
-        </li>
-      </ol>
+    <ol>
+      <li>
+Each row contains the numbers 1 to 4.
+      </li>
+      <li>
+Each column contains the numbers 1 to 4.
+      </li>
+      <li>
+Each 2 X 2 cell contains the numbers 1 to 4.
+      </li>
+      <li>
+Do not repeat a number in either a row, column, or cell.
+      </li>
+    </ol>
+
+  </section>
 
   <script src="./script.js"></script>
 
