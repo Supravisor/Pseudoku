@@ -47,4 +47,10 @@ const checkForWin = () => {
   let quadrantC = Number(keypad[8].innerText) + Number(keypad[9].innerText) + Number(keypad[10].innerText) + Number(keypad[11].innerText);
   let quadrantD = Number(keypad[12].innerText) + Number(keypad[13].innerText) + Number(keypad[14].innerText) + Number(keypad[15].innerText);
 
+  let isQuadrantTrue = false;
+
+  if (quadrantA === 10 && quadrantB === 10 && quadrantC === 10 && quadrantD === 10) {
+    isQuadrantTrue = true;
+  }
+
 }
