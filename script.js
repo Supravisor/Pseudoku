@@ -42,4 +42,6 @@ const selectors = document.querySelector("#selectors");
 // check for Win
 const checkForWin = () => {
 
+  let quadrantA = Number(keypad[4].innerText) + Number(keypad[5].innerText) + Number(keypad[6].innerText) + Number(keypad[7].innerText);
+
 }
