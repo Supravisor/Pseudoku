@@ -1,5 +1,6 @@
 
-const keypad = document.querySelector("#puzzle button");
+// puzzle
+const keypad = document.querySelectorAll("#puzzle button");
 const puzzle = document.getElementById("puzzle");
 
 let selected = " ";
@@ -14,6 +15,7 @@ let selected = " ";
 
   });
 
+// selectors
 const selectors = document.querySelector("#selectors");
 
   selectors.addEventListener("click", (event) => {
@@ -36,3 +38,8 @@ const selectors = document.querySelector("#selectors");
     }
 
   });
+
+// check for Win
+const checkForWin = () => {
+
+}
