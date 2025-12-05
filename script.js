@@ -1,9 +1,10 @@
 
-const keypad = document.querySelector("#puzzle");
+const keypad = document.querySelector("#puzzle button");
+const puzzle = document.getElementById("puzzle");
 
 let selected = " ";
 
-  keypad.addEventListener("click", (event) => {
+  puzzle.addEventListener("click", (event) => {
 
     if (selected === " ") {
       event.target.innerHTML = `&nbsp;`;
