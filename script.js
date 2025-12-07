@@ -58,4 +58,10 @@ const checkForWin = () => {
   let rowC = Number(keypad[8].innerText) + Number(keypad[10].innerText) + Number(keypad[12].innerText) + Number(keypad[14].innerText);
   let rowD = Number(keypad[9].innerText) + Number(keypad[11].innerText) + Number(keypad[13].innerText) + Number(keypad[15].innerText);
 
+  let isRowTrue = false;
+
+  if (rowA === 10 && rowB === 10 && rowC === 10 && rowD === 10) {
+    isRowTrue = true;
+  }
+
 }
