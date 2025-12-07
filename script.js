@@ -53,4 +53,6 @@ const checkForWin = () => {
     isQuadrantTrue = true;
   }
 
+  let rowA = Number(keypad[0].innerText) + Number(keypad[2].innerText)+ Number(keypad[4].innerText) + Number(keypad[6].innerText);
+
 }
