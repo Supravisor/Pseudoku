@@ -54,5 +54,6 @@ const checkForWin = () => {
   }
 
   let rowA = Number(keypad[0].innerText) + Number(keypad[2].innerText)+ Number(keypad[4].innerText) + Number(keypad[6].innerText);
+  let rowB = Number(keypad[1].innerText) + Number(keypad[3].innerText) + Number(keypad[5].innerText) + Number(keypad[7].innerText);
 
 }
