@@ -84,6 +84,7 @@ const checkForWin = () => {
 
   if (isQuadrantTrue === true && isRowTrue === true && isColumnTrue === true) {
 
+    isGameWon = true;
     keypad.forEach(button => button.innerText = " ");
 
     setTimeout(() => {
