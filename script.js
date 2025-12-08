@@ -66,5 +66,6 @@ const checkForWin = () => {
 
   let columnA = Number(keypad[0].innerText) + Number(keypad[1].innerText) + Number(keypad[8].innerText) + Number(keypad[9].innerText);
   let columnB = Number(keypad[2].innerText) + Number(keypad[3].innerText) + Number(keypad[10].innerText) + Number(keypad[11].innerText);
+  let columnC = Number(keypad[4].innerText) + Number(keypad[5].innerText) + Number(keypad[12].innerText) + Number(keypad[13].innerText);
 
 }
