@@ -97,6 +97,21 @@ const checkForWin = () => {
       keypad[6].innerText = " ";
     }, 4000);
 
+    setTimeout(() => {
+      keypad[1].innerText = "W";
+    }, 5000);
+
+    setTimeout(() => {
+      keypad[3].innerText = "I";
+    }, 6000);
+
+    setTimeout(() => {
+      keypad[5].innerText = "N";
+    }, 7000);
+
+    setTimeout(() => {
+      keypad[7].innerText = " ";
+    }, 8000);
 
   }
 
