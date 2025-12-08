@@ -8,6 +8,10 @@ let isGameWon = false;
 
   puzzle.addEventListener("click", (event) => {
 
+    if (isGameWon) {
+      return;
+    }
+
     if (selected === " ") {
       event.target.innerHTML = `&nbsp;`;
     } else {
