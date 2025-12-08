@@ -4,8 +4,13 @@ const keypad = document.querySelectorAll("#puzzle button");
 const puzzle = document.getElementById("puzzle");
 
 let selected = " ";
+let isGameWon = false;
 
   puzzle.addEventListener("click", (event) => {
+
+    if (isGameWon) {
+      return;
+    }
 
     if (selected === " ") {
       event.target.innerHTML = `&nbsp;`;
@@ -21,6 +26,10 @@ let selected = " ";
 const selectors = document.querySelector("#selectors");
 
   selectors.addEventListener("click", (event) => {
+
+    if (event.target.innerText.length > 1) {
+      return;
+    }
 
     if (event.target.style.background === "blue") {
       selected = " ";
@@ -79,6 +88,7 @@ const checkForWin = () => {
 
   if (isQuadrantTrue === true && isRowTrue === true && isColumnTrue === true) {
 
+    isGameWon = true;
     keypad.forEach(button => button.innerText = " ");
 
     setTimeout(() => {
