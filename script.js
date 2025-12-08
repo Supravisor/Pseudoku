@@ -75,4 +75,8 @@ const checkForWin = () => {
     isColumnTrue = true;
   }
 
+  if (isQuadrantTrue === true && isRowTrue === true && isColumnTrue === true) {
+
+  }
+
 }
