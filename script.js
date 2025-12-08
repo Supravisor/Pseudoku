@@ -4,6 +4,7 @@ const keypad = document.querySelectorAll("#puzzle button");
 const puzzle = document.getElementById("puzzle");
 
 let selected = " ";
+let isGameWon = false;
 
   puzzle.addEventListener("click", (event) => {
 
