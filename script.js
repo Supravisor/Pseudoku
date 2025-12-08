@@ -77,6 +77,8 @@ const checkForWin = () => {
 
   if (isQuadrantTrue === true && isRowTrue === true && isColumnTrue === true) {
 
+    keypad.forEach(button => button.innerText = " ");
+
   }
 
 }
