@@ -81,6 +81,23 @@ const checkForWin = () => {
 
     keypad.forEach(button => button.innerText = " ");
 
+    setTimeout(() => {
+      keypad[0].innerText = "Y";
+    }, 1000);
+
+    setTimeout(() => {
+      keypad[2].innerText = "O";
+    }, 2000);
+
+    setTimeout(() => {
+      keypad[4].innerText = "U";
+    }, 3000);
+
+    setTimeout(() => {
+      keypad[6].innerText = " ";
+    }, 4000);
+
+
   }
 
 }
