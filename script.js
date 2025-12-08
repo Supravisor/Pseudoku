@@ -13,6 +13,8 @@ let selected = " ";
         event.target.innerHTML = selected;
     }
 
+    checkForWin();
+
   });
 
 // selectors
