@@ -64,4 +64,6 @@ const checkForWin = () => {
     isRowTrue = true;
   }
 
+  let columnA = Number(keypad[0].innerText) + Number(keypad[1].innerText) + Number(keypad[8].innerText) + Number(keypad[9].innerText);
+
 }
