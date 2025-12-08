@@ -13,6 +13,8 @@ let selected = " ";
         event.target.innerHTML = selected;
     }
 
+    checkForWin();
+
   });
 
 // selectors
@@ -62,6 +64,55 @@ const checkForWin = () => {
 
   if (rowA === 10 && rowB === 10 && rowC === 10 && rowD === 10) {
     isRowTrue = true;
+  }
+
+  let columnA = Number(keypad[0].innerText) + Number(keypad[1].innerText) + Number(keypad[8].innerText) + Number(keypad[9].innerText);
+  let columnB = Number(keypad[2].innerText) + Number(keypad[3].innerText) + Number(keypad[10].innerText) + Number(keypad[11].innerText);
+  let columnC = Number(keypad[4].innerText) + Number(keypad[5].innerText) + Number(keypad[12].innerText) + Number(keypad[13].innerText);
+  let columnD = Number(keypad[6].innerText) + Number(keypad[7].innerText) + Number(keypad[14].innerText) + Number(keypad[15].innerText);
+
+  let isColumnTrue = false;
+
+  if (columnA === 10 && columnB === 10 && columnC === 10 && columnD === 10) {
+    isColumnTrue = true;
+  }
+
+  if (isQuadrantTrue === true && isRowTrue === true && isColumnTrue === true) {
+
+    keypad.forEach(button => button.innerText = " ");
+
+    setTimeout(() => {
+      keypad[0].innerText = "Y";
+    }, 1000);
+
+    setTimeout(() => {
+      keypad[2].innerText = "O";
+    }, 2000);
+
+    setTimeout(() => {
+      keypad[4].innerText = "U";
+    }, 3000);
+
+    setTimeout(() => {
+      keypad[6].innerText = " ";
+    }, 4000);
+
+    setTimeout(() => {
+      keypad[1].innerText = "W";
+    }, 5000);
+
+    setTimeout(() => {
+      keypad[3].innerText = "I";
+    }, 6000);
+
+    setTimeout(() => {
+      keypad[5].innerText = "N";
+    }, 7000);
+
+    setTimeout(() => {
+      keypad[7].innerText = " ";
+    }, 8000);
+
   }
 
 }
