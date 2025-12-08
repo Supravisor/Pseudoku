@@ -69,4 +69,10 @@ const checkForWin = () => {
   let columnC = Number(keypad[4].innerText) + Number(keypad[5].innerText) + Number(keypad[12].innerText) + Number(keypad[13].innerText);
   let columnD = Number(keypad[6].innerText) + Number(keypad[7].innerText) + Number(keypad[14].innerText) + Number(keypad[15].innerText);
 
+  let isColumnTrue = false;
+
+  if (columnA === 10 && columnB === 10 && columnC === 10 && columnD === 10) {
+    isColumnTrue = true;
+  }
+
 }
