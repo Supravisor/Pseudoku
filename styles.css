@@ -2,6 +2,7 @@
 body {
   margin: 16px;
   font-family: Arial;
+  padding-bottom: 1em;
 }
 
 #puzzle, #selectors, #challenge {
