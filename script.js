@@ -13,6 +13,8 @@ let random2;
 let random3;
 let random4;
 
+let today = new Date().getDate();
+
   puzzle.addEventListener("click", (event) => {
 
     if (isGameWon) {
