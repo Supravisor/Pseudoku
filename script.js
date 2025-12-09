@@ -30,6 +30,13 @@ const setGrid = (arr) => {
     keypad[6].innerText = random4;
   }
 
+  if (today % 14 === 1) {
+    setGrid([4, 1, 3, 2]);
+    keypad[3].innerText = random1;
+    keypad[12].innerText = random1;
+  }
+
+
   puzzle.addEventListener("click", (event) => {
 
     if (isGameWon) {
@@ -136,7 +143,7 @@ const checkForWin = () => {
     }, 5000);
 
     setTimeout(() => {
-      keypad[3].innerText = "I";
+      keypad[3].innerText = "O";
     }, 6000);
 
     setTimeout(() => {
