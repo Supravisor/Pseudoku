@@ -13,7 +13,7 @@ let random2;
 let random3;
 let random4;
 
-let today = new Date().getDate();
+let today = Math.floor(Math.random() * 15);
 
 const setGrid = (arr) => {
   random1 = arr.splice(random(arr), 1);
