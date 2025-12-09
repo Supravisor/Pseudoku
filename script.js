@@ -8,6 +8,11 @@ let isGameWon = false;
 
 let random = (arr) => Math.floor(Math.random(arr.length) * 3);
 
+let random1;
+let random2;
+let random3;
+let random4;
+
   puzzle.addEventListener("click", (event) => {
 
     if (isGameWon) {
