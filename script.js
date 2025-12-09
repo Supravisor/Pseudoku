@@ -15,6 +15,13 @@ let random4;
 
 let today = new Date().getDate();
 
+const setGrid = (arr) => {
+  random1 = arr.splice(random(arr), 1);
+  random2 = arr.splice(random(arr), 1);
+  random3 = arr[0];
+  random4 = arr[1];
+}
+
   puzzle.addEventListener("click", (event) => {
 
     if (isGameWon) {
