@@ -2,6 +2,7 @@
 body {
   margin: 16px;
   font-family: Arial;
+  padding-bottom: 1em;
 }
 
 #puzzle, #selectors, #challenge {
@@ -49,4 +50,8 @@ h2 {
 
 ol {
   margin-left: -1em;
+}
+
+.hide {
+  display: none;
 }
