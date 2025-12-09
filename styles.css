@@ -50,3 +50,7 @@ h2 {
 ol {
   margin-left: -1em;
 }
+
+.hide {
+  display: none;
+}
