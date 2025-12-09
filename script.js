@@ -337,6 +337,9 @@ const checkForWin = () => {
    const selector = document.querySelectorAll(".select");
    selector.forEach(button => button.classList.add("hide"));
 
+   const challenge = document.getElementById("challenge");
+   challenge.classList.add("hide");
+
     setTimeout(() => {
       keypad[0].innerText = "Y";
     }, 1000);
