@@ -6,6 +6,8 @@ const puzzle = document.getElementById("puzzle");
 let selected = " ";
 let isGameWon = false;
 
+let random = (arr) => Math.floor(Math.random(arr.length) * 3);
+
   puzzle.addEventListener("click", (event) => {
 
     if (isGameWon) {
