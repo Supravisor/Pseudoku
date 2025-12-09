@@ -97,7 +97,6 @@ const setGrid = (arr) => {
     keypad[12].innerText = random4;
   }
 
-
   if (today % 14 === 9) {
     setGrid([1, 2, 3, 4]);
     keypad[0].innerText = random1;
@@ -154,6 +153,112 @@ const setGrid = (arr) => {
       event.target.innerHTML = `&nbsp;`;
     } else {
         event.target.innerHTML = selected;
+    }
+
+    if (today % 14 === 0) {
+      keypad[0].innerText = random1;
+      keypad[2].innerText = random2;
+      keypad[4].innerText = random3;
+      keypad[6].innerText = random4;
+    }
+
+    if (today % 14 === 1) {
+      keypad[3].innerText = random1;
+      keypad[12].innerText = random1;
+    }
+
+    if (today % 14 === 2) {
+      keypad[9].innerText = random1;
+      keypad[10].innerText = random2;
+      keypad[13].innerText = random2;
+      keypad[6].innerText = random4;
+    }
+
+    if (today % 14 === 3) {
+      keypad[0].innerText = random1;
+      keypad[2].innerText = random2;
+      keypad[4].innerText = random3;
+      keypad[6].innerText = random4;
+
+      keypad[8].innerText = random2;
+      keypad[10].innerText = random1;
+      keypad[12].innerText = random4;
+      keypad[14].innerText = random3;
+    }
+
+    if (today % 14 === 4) {
+      keypad[0].innerText = random1;
+      keypad[7].innerText = random2;
+      keypad[13].innerText = random3;
+      keypad[15].innerText = random4;
+    }
+
+    if (today % 14 === 5) {
+      keypad[1].innerText = random1;
+      keypad[8].innerText = random2;
+      keypad[4].innerText = random2;
+      keypad[6].innerText = random1;
+    }
+
+    if (today % 14 === 6) {
+      keypad[3].innerText = random1;
+      keypad[5].innerText = random2;
+      keypad[9].innerText = random1;
+      keypad[6].innerText = random4;
+    }
+
+    if (today % 14 === 7) {
+      keypad[0].innerText = random1;
+      keypad[6].innerText = random2;
+      keypad[9].innerText = random3;
+      keypad[15].innerText = random4;
+    }
+
+    if (today % 14 === 8) {
+      keypad[1].innerText = random1;
+      keypad[3].innerText = random2;
+      keypad[9].innerText = random3;
+      keypad[12].innerText = random4;
+    }
+
+    if (today % 14 === 9) {
+      keypad[0].innerText = random1;
+      keypad[3].innerText = random2;
+      keypad[12].innerText = random3;
+      keypad[15].innerText = random4;
+    }
+
+    if (today % 14 === 10) {
+      keypad[4].innerText = random1;
+      keypad[8].innerText = random1;
+      keypad[6].innerText = random4;
+    }
+
+    if (today % 14 === 11) {
+      keypad[12].innerText = random1;
+      keypad[13].innerText = random2;
+      keypad[14].innerText = random3;
+      keypad[15].innerText = random4;
+    }
+
+    if (today % 14 === 12) {
+      keypad[0].innerText = random1;
+      keypad[5].innerText = random2;
+      keypad[9].innerText = random2;
+      keypad[15].innerText = random1;
+    }
+
+    if (today % 14 === 13) {
+      keypad[5].innerText = random2;
+      keypad[10].innerText = random2;
+      keypad[11].innerText = random3;
+    }
+
+    if (today % 14 === 14) {
+      keypad[7].innerText = random1;
+      keypad[9].innerText = random2;
+      keypad[12].innerText = random1;
+      keypad[6].innerText = random4;
     }
 
     checkForWin();
