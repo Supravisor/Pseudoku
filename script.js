@@ -81,6 +81,14 @@ const setGrid = (arr) => {
     keypad[6].innerText = random4;
   }
 
+  if (today % 14 === 7) {
+    setGrid([4, 2, 1, 3]);
+    keypad[0].innerText = random1;
+    keypad[6].innerText = random2;
+    keypad[9].innerText = random3;
+    keypad[15].innerText = random4;
+  }
+
   puzzle.addEventListener("click", (event) => {
 
     if (isGameWon) {
