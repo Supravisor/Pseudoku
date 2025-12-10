@@ -145,6 +145,10 @@ const setGrid = (arr) => {
 
   puzzle.addEventListener("click", (event) => {
 
+    if (event.target.innerText.length > 1) {
+      return;
+    }
+
     if (isGameWon) {
       return;
     }
